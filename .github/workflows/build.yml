@@ -1,3 +1,4 @@
+
 name: Build C++ EXE
 
 on:
@@ -11,6 +12,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Check files
+        run: Get-ChildItem -Recurse -File
 
       - name: Compile C++
         run: g++ main.cpp -o program.exe
