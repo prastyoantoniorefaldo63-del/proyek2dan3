@@ -17,7 +17,7 @@ jobs:
         run: Get-ChildItem -Recurse -File
 
       - name: Compile C++
-        run: g++ main.cpp -o program.exe
+        run: g++ nama.cpp -o program.exe
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
