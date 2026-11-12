@@ -20,8 +20,8 @@ string menu[5]={"Soto","Rawon", "pecel", "kopi", "teh"};
             cout<<"================================="<<endl;
             
         }
-        
+        system("pause");
 
     return 0;
-    system("pause");
+    
 }
