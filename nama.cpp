@@ -6,6 +6,7 @@ string menu[5]={"Soto","Rawon", "pecel", "kopi", "teh"};
     int porsi[5];
     int total[5];
     int i;
+    int gtotal= 0;
     for(int i=0;i<5;i++)
         { 
             cout<<"================================="<<endl;
@@ -15,11 +16,14 @@ string menu[5]={"Soto","Rawon", "pecel", "kopi", "teh"};
             cout<<harga[i]<<endl;
             cout<<"porsi  ";
             cin>>porsi[i];
-            total[i]= porsi[i]*harga[i];
-            cout<<total[i]<<endl;
-            cout<<"================================="<<endl;
+            total[i] = porsi[i] * harga[i];
+            gtotal += total[i];
+            cout << total[i] << endl;
             
+            cout<<"================================="<<endl;
+
         }
+        cout << "TOTAL SEMUA PESANAN: Rp" << gtotal << endl;
         system("pause");
 
     return 0;
